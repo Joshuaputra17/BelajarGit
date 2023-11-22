@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta name="viewport" content="width=device-width, initial-sclae = 1.0"> -->
+    <link rel="stylesheet" href="style.css">
+    <title>Formulir Pendaftaran</title>
+</head>    
+<body>    
+    <div class="containor">
+        <h1>Formulir Pendaftaran</h1>
+        <form id="form-registrasi">
+            <div class="form-group">
+                <label for="nmLengkap">Nama Lengkap : </label>
+                <input type="text" name="namaLengkap" id="namaLengkap"/>
+                <p id="namaLengkap-error" class="error"></p>
+            </div>
+            <div class="form-group">
+                <label for="email">Email : </label>
+                <input type="email" name="email" id="email"/>
+                <p id="email-error" class="error"></p>
+            </div>
+            <div class="form-group">
+                <label for="alamat">Alamat : </label>
+                <textarea name="alamat" id="alamat"></textarea>
+                <p id="alamat-error" class="error"></p>
+            </div>
+            <div class="form-group">
+                <label for="password">password : </label>
+                <input type="password" name="password" id="password" />
+                <p id="password-error" class="error"></p>
+            </div>
+            <div class="form-group" id="JenisKelamin">
+                <label>Jenis Kelamin : </label>
+                <input type = "radio" name ="JenisKelamin" id="LakiLaki" value = "Laki-Laki">
+                <label for = "LakiLaki"> Laki-Laki </label>
+                <input type = "radio" name ="JenisKelamin" id="Perempuan" value = "Perempuan">
+                <label for = "Perempuan"> Perempuan </label>
+                <input type = "radio" name ="JenisKelamin" id="NonBinary" value = "Non-Binary">
+                <label for = "NonBinary"> Non-Binary </label>
+            </div>
+            <div class="form-group" id="hobi">
+                <label for="hobi">Hobi : </label>
+                <input type="checkbox" name="hobi" id="ngoding" value="Ngoding" />
+                <label for="ngoding">Ngoding</label>
+                    
+                <input type="checkbox" name="hobi" id="olahraga" value="olahraga" />
+                <label for="olahraga">Olah raga</label>
+                    
+                <input type="checkbox" name="hobi" id="hiking" value="hiking" />
+                <label for="hiking">Hiking</label>
+            </div>
+            <div class="form-group" id="kelas">
+                <label for="kelas">Kelas : </label>
+                <select name="kelas" id="kelas">
+                    <option value="XI PPLG 1">XI PPLG 1</option>
+                    <option value="XI PPLG 2">XI PPLG 2</option>
+                    <option value="XI DKV 1">XI DKV 1</option>
+                    <option value="XI DKV 2">XI DKV 2</option>
+                    <option value="XI TJKT 1">XI TJKT 1</option>
+                    <option value="XI TJKT 2">XI TJKT 2</option>
+                    <option value="XI TF 1">XI TF 1</option>
+                    <option value="XI TF 2">XI TF 2</option>
+                    <option value="XI AKL 1">XI AKL 1</option>
+                    <option value="XI AKL 2">XI AKL 2</option>
+                    <option value="XI AKL 3">XI AKL 3</option>
+                    <option value="XI AKL 4">XI AKL 4</option>
+                    <option value="XI AKL 5">XI AKL 5</option>
+                    <option value="XI PM 1">XI PM 1</option>
+                    <option value="XI PM 2">XI PM 2</option>
+                    <option value="XI PM 3">XI PM 3</option>
+                    <option value="XI MPLG 1">XI MPLB 1</option>
+                    <option value="XI MPLG 2">XI MPLB 2</option>
+                    <option value="XI MPLG 3">XI MPLB 3</option>
+                    <option value="XI MPLG 4">XI MPLB 4</option>
+                </select>
+            </div>
+            <div>
+                <input type="submit" value="DAFTAR" id="submit"/>
+            </div>
+        </form>
+    </div>
+    <script src="script.js">
+
+    </script>
+</body>
+</html>
